@@ -1,6 +1,141 @@
-body{ background-color:rgb(196, 79, 108);}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-h1{display: inline;}
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
+/* Navbar */
+header {
+    background: #111;
+    padding: 1rem 0;
+}
 
-#about{display: inline;}
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00adb5;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #00adb5, #393e46);
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: #00adb5;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #222;
+    color: white;
+}
+
+/* Sections */
+.section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* Projects */
+.project-card {
+    background: white;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #00adb5;
+    font-weight: bold;
+}
+
+/* Skills */
+.skills-list span {
+    display: inline-block;
+    background: #00adb5;
+    color: white;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
