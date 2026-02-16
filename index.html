@@ -2,30 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Migara Bandara | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="about">
-    <img src="abc.png">
-    <h1>Migara Bandara</h1>
-    <p>A student of University of kelaniya pursuing a Degree in Computer science and Physics.</p>
-</div>
 
+    <header>
+        <nav>
+            <h1 class="logo">Migara</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div id="skills"> <h2>skills</h2>
-        <ul>
-        <li>Programming skills</li>
-        <li>Communication skills</li>
-        <li>Team working skills</li>
-        <li>Management skills</li>
-        </ul>
-    </div>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Hi, I'm Migara 👋</h2>
+            <p>Full-Stack Developer | Software Enthusiast</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
 
-    <a href="project.html">See Projects & Achievements</a>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate full-stack developer with experience in building
+            modern web applications using React, Spring Boot, and MongoDB.
+            I enjoy solving problems and building secure, scalable systems.
+        </p>
+    </section>
 
-    <p id="contact"><a href="linkedin.com">My linkedin</a></p>
-    <p id="contact"><a href="Facwbook.com">My Facebook</a></p>
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>EchoNet - Social Media Platform</h3>
+            <p>Full-stack social media platform with JWT authentication and real-time chat.</p>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal portfolio built using HTML and CSS.</p>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Spring Boot</span>
+            <span>MongoDB</span>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: migara@example.com</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Migara Bandara. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
